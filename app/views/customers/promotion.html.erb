@@ -4,7 +4,10 @@
       <%= f.text_field :code %>
     </p>
     <p>
-      <%= f.submit 'Proceed' %>
+      <%= f.submit 'Apply Code' %>
     </p>
 <% end %>
+<p>
+  <%= link_to 'Next to checkout', new_customer_path %>
+</p>
 <%= link_to 'Back', root_path %>
