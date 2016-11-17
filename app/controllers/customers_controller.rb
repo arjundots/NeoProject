@@ -65,6 +65,7 @@ class CustomersController < ApplicationController
       @order = active_order
       @order.order_status_id = 2
       @order.save
+      @order.order_promotions.delete_all
       session.delete(:order_id)
       redirect_to root_url
     else
